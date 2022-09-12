@@ -1,0 +1,60 @@
+.root { -fx-background-color: transparent; }
+@font-face {
+    font-family: Delicious;
+    src: url("Fonts/kenvector_future_thin.ttf");
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #3c3c3c;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #96b946;
+}
+
+
+.button{
+	 -fx-background-image: url("pauseButton.png");
+	 -fx-background-color: transparent;
+}
+
+.tab-pane *.tab-header-background {
+    -fx-background-color: transparent;
+    -fx-effect: innershadow(two-pass-box , rgb(100, 0, 0) , 4, 0.0 , 0 , 0);
+    -fx-font-family: "Kenney Pixel"
+}
+
+.button:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}

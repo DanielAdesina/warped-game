@@ -1,0 +1,21 @@
+.root { -fx-background-color: transparent; }
+@font-face {
+    font-family: Delicious;
+    src: url("Fonts/kenvector_future_thin.ttf");
+}
+
+
+
+.button{
+	 -fx-background-color: transparent;
+	 
+	 
+}
+
+.button:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
